@@ -30,7 +30,7 @@ if(isset($_POST['delete']))
 <header class="masthead" style="background-image: url('../assets/img/post-bg.jpg')">
     <div class="container position-relative px-4 px-lg-5">
      
-    <?php if($_SESSION['user_name']==$posts['username']) {?>
+    <!-- <?php if($_SESSION['user_id']==$posts['user_id']) {?> -->
               
       <form method="post">
         <button class="btn" type="submit" name="delete"><i class="fas fa-trash text-white fs-3"></i></button>
@@ -38,7 +38,7 @@ if(isset($_POST['delete']))
 
       <a href=<?= "edit_post.php?id=" . $_GET['id'] ?> class=" btn" type="submit"><i
                 class="fas fa-edit text-white fs-3"></i></a>
-    <?php  } ?>
+    <!-- <?php  } ?> -->
 
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="post-heading">
